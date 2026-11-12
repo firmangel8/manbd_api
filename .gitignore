@@ -1,0 +1,62 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+ENV/
+.venv.bak/
+
+# ===== Environment / secrets =====
+# The real .env holds DB credentials - never commit it.
+.env
+.env.*
+!.env.example
+
+# ===== Package / build artifacts =====
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ===== Testing / coverage =====
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ===== IDEs / editors =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== Jupyter notebooks (if ever used for lessons) =====
+.ipynb_checkpoints/
+
+# ===== Logs =====
+*.log
+logs/
+uvicorn*.log
+
+# ===== Databases (local dev leftovers) =====
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sql
